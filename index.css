@@ -4,7 +4,7 @@ body{
     font-family: 'Poppins',sans-serif;
     box-sizing: border-box;
     background-color: #1b191b;
-    overflow-x:hiden;
+    overflow-x:hidden;
     direction: ltr;
     --pers-bg:#232b3e;
     --txt-col:aqua;
@@ -34,7 +34,7 @@ h3{
     position: absolute;
     left: 288px;
     /* top:172px; */
-    bottom: 440px;
+    bottom: 500px;
     font-size:20px;
     color: #04eeff;
     letter-spacing: 2px;
@@ -46,8 +46,8 @@ h3{
     position: relative;
     left: 300px;
     letter-spacing: 3px;
-    top: 140px;
-    font-size: 100px;
+    top: 100px;
+    font-size: 70px;
     color: #04eeff;
 }
 h1{
@@ -103,10 +103,21 @@ nav a{
     width: 100%;
     position: fixed;
     z-index: 4;
-    bottom: 520px;
-    background: #081B29;
-    
+    /* bottom: 520px; */
+ 
+  backdrop-filter: blur(50px);
+margin-top: -2.6rem;
+height: 4.3rem;
 }
+
+.links{
+  
+    padding-bottom: 0;
+    height: 100%;
+    padding-top: -44rem;
+    margin-top: -3rem;
+
+    }
 a{
     padding-left: 28px;
     color: white;
@@ -122,9 +133,9 @@ li{
 .aa{
     text-decoration: none;
     color: #fff;
-    font-size: 1rem;
-    
+    font-size: 1rem;   
 }
+
 .aa:hover{
     color: orange;
 }
@@ -183,7 +194,7 @@ text-transform: capitalize;
     position: relative;
     left: 107px;
     top: 120px;
-    font-size: 80px;
+    font-size: 50px;
 }
 .pp{
     color: white;
@@ -202,7 +213,8 @@ text-transform: capitalize;
     height: 132vh;
     left: 213px;
     margin-left: -219px;
-    padding-bottom: 123px;
+    padding-bottom: 3px;
+
 }
 .about-image{
     border: solid aqua;
@@ -235,7 +247,7 @@ background-color: var(--pers-bg);
 width: 900vh;
 height: 134vh;
 min-height: auto;
-padding-bottom: 27rem;
+padding-bottom: 7rem;
 position: relative;
 left: 83px;
 padding-left: 50px;
@@ -311,7 +323,7 @@ width: 100%;
     padding: 1rem 0;
 }
 .skills-content .progress #ps{
-    font-size: 1.7rem;
+    font-size: 1.0rem;
     display: flex;
     justify-content:space-between;
 }
@@ -377,30 +389,37 @@ color: white;
     padding-right: 110px;
     min-height: auto;
     padding-bottom: 7rem;
-    padding-top: 45px;
+    padding-top: 5px;
 }
 .contact form{
     max-width: 70rem;
     margin: 0 auto;
     text-align: center;
+
 }
 .contact form .input-box{
 position: relative;
 display: flex;
-justify-content: space-between;
 flex-wrap: wrap;
+gap: 1rem;
+margin-left: 14rem;
 }
 .contact form .input-box .input-field{
     position: relative;
     width: 49%;
     margin: 0.8rem 0;
 }
+.contact form .input-box .input-field input[placeholder="Subject"]{
+margin-left: -23rem;
+}
+.contact form .input-box .input-field input[placeholder="Email Adress"]{
+    margin-left: -23rem;
+}
 .contact form .input-box .input-field input,
 .contact form .textarea-field textarea{
-    width: 100%;
+    width: 40%;
     height: 100%;
-    padding: 1.rem;
-    font-size: 1.6rem;
+    font-size: 1rem;
     background-color: transparent;
     border-radius: .6rem;
     color: white;
@@ -413,8 +432,9 @@ flex-wrap: wrap;
 }
 .contact form .textarea-field{
     position: relative;
-    margin: .8rem 0 2.7rem;
+    margin:.8rem 0 2.7rem;
     display: flex;
+  left: 22rem;
 }
 .contact form .textarea-field textarea{
     resize: none;
@@ -447,6 +467,7 @@ flex-wrap: wrap;
 }
 .portfolio{
     background: var(--pers-bg);
+    padding-bottom: 5rem;
     /* height: -340vh; */
 
 }
@@ -602,8 +623,9 @@ footer{
     align-items: center;
     flex-wrap: wrap;
     padding: 2rem 9%;
-    background: #232b3e
-    
+    /* background: #232b3e */
+   padding-top: 2rem;
+   margin-top: -10rem;
 }
 #footer-para{
     left: 633px;

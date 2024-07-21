@@ -128,7 +128,7 @@
     </section>
     <section class="contact" id="contact-page" >
         <h2 class="heading" id="mee"><span >CONTACT </span>ME!</h2>
-        <form action="#">
+        <form  action="mailto:omegakofi10@.com" method="post" enctype="text/plain">
             <div class="input-box">
                 <div class="input-field">
                     <input type="text" placeholder="Full name">
@@ -201,18 +201,18 @@
     </section>
 
     <footer>
-        <div class="footer-text"  data-aos="fade-down" data-aos-delay="1000">
-            <p id="footer-para" class="p">Copyright &copy; 2023 by OMEGA | All Rights Reserved</p>
+        <div class="footer-text">
+            <p id="footer-para" class="p">Copyright &copy; 2023 by APHACO | All Rights Reserved</p>
         </div>
         <div class="footer-icontop">
             <a href="#home"><box-icon id="fotico" name='chevrons-up' ></box-icon></a>
         </div>
     </footer>
     <div class="social-ico">
-        <a href="https://t.co/lMpmGXN0nv" id="nav-top"><box-icon type='logo' name='meta' color='#0cd2f3' id="nav-top"></box-icon></a>
-        <a href="instagram.com" id="nav-top"><box-icon name='instagram-alt' type='logo'color='#0cd2f3' id="nav-top" ></box-icon></a>
-        <a  href="gmail.com"id="nav-top"><box-icon name='gmail' type='logo' color='#0cd2f3'id="nav-top" ></box-icon></a>
-        <a href="x.com" id="nav-top">
+        <a href="https://www.linkedin.com" id="nav-top"><box-icon type='logo' name='linkedin' color='#0cd2f3' id="nav-top"></box-icon></a>
+        <a href="https://www.instagram.com/omega_aphaco?igsh=NTJ6a2gxb3lmbXAz" id="nav-top"><box-icon name='instagram-alt' type='logo'color='#0cd2f3' id="nav-top" ></box-icon></a>
+        <a  href="omegakofi10@gmail.com"id="nav-top"><box-icon name='gmail' type='logo' color='#0cd2f3'id="nav-top" ></box-icon></a>
+        <a href="https://x.com/OAphaco?t=WXiNqyvSBExCpB7yB4PFGg&s=09" id="nav-top">
             <i class="fa-brands fa-x-twitter" ></i>
         </a>
     </div>
@@ -271,6 +271,13 @@ window.addEventListener('load', () => {
     });
   });
 });
+document.getElementById('contact-form').addEventListener('submit', async (event) => {
+    alert('Email sent successfully!');
+            event.target.reset();
+        event.preventDefault();
+
+      
+    });
 
     </script>
 </html>
